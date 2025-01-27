@@ -1,8 +1,13 @@
 ﻿bool IsPalindrome(int x)
 {
-    if (x < 0)
-        return false;
-    
+    switch (x)
+    {
+        case < 0:
+            return false;
+        case 0:
+            return true;
+    }
+
     var num = x;
     var reverseNum = 0;
 
@@ -16,6 +21,6 @@
     return x / reverseNum == 1;
 }
 
-const int input = -1000;
+const int input = 121;
 
 Console.WriteLine($"{input} is palindrome? " + IsPalindrome(input));
