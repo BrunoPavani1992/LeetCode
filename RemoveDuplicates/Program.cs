@@ -1,23 +1,21 @@
 ﻿int RemoveDuplicates(int[] nums)
 {
-    var list = new List<int>();
-
-    foreach (var n in nums)
+    var nextIndex = 0;
+    var unique = nums[nextIndex];
+    var i = 1;
+    while (i < nums.Length)
     {
-        if (list.Any(x => x == n))
-            continue;
+        if (nums[i] != unique)
+        {
+            nextIndex++;
+            unique = nums[i];
+            nums[nextIndex] = unique;
+        }
 
-        list.Add(n);
-    }
-    
-    Array.Clear(nums);
-
-    for (var i = 0; i < list.Count; i++)
-    {
-        nums[i] = list[i];
+        i++;
     }
 
-    return list.Count;
+    return nextIndex + 1;
 }
 
 var input = new int[] { 1, 1, 2 };
