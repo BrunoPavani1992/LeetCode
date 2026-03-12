@@ -2,23 +2,11 @@
     s = s.Trim();
 
     var word = "";
-    var reset = false;
 
-    foreach (var c in s)
+    for (var x = s.Length - 1; x >= 0; x--)
     {
-        if (c.ToString() == " ")
-        {
-            reset = true;
-        }
-        else
-        {
-            if (reset)
-            {
-                reset = false;
-                word = "";
-            }
-            word += c;    
-        }
+        if (s[x].ToString() == " ") return word.Length;
+        word += s[x];
     }
 
     return word.Length;
