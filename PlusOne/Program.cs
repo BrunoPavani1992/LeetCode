@@ -12,23 +12,21 @@ int[] PlusOne(int[] digits)
 {
     for (var x = digits.Length - 1; x >= 0; x--)
     {
-        if (digits[x] == 9)
-        {
-            digits[x] = 0;
-
-            if (x == 0)
-            {
-                digits = digits.Prepend(1).ToArray();
-                return digits;
-            }
-        } else if (digits[x] != 9)
+        if (digits[x] != 9)
         {
             digits[x] += 1;
             return digits;
+        } 
+        else
+        {
+            digits[x] = 0;
         }
     }
-
-    return digits;
+    
+    //Sacrificing memory, to prevent array shifting...
+    var result = new int[digits.Length + 1];
+    result[0] = 1;
+    return result;
 }
 
 var digits = new[] { 9, 9 };
