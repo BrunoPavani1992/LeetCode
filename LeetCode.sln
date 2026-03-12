@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTwoSortedLists", "Merg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchInsertPosition", "SearchInsertPosition\SearchInsertPosition.csproj", "{20DD31F4-D0E6-408B-AE40-0B6D34562123}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LengthofLastWord", "LengthofLastWord\LengthofLastWord.csproj", "{07C6AC1B-4A65-495B-AA8D-DA82A669D983}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{20DD31F4-D0E6-408B-AE40-0B6D34562123}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20DD31F4-D0E6-408B-AE40-0B6D34562123}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20DD31F4-D0E6-408B-AE40-0B6D34562123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07C6AC1B-4A65-495B-AA8D-DA82A669D983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C6AC1B-4A65-495B-AA8D-DA82A669D983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C6AC1B-4A65-495B-AA8D-DA82A669D983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C6AC1B-4A65-495B-AA8D-DA82A669D983}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
