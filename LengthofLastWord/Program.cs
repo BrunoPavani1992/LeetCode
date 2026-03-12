@@ -1,15 +1,10 @@
 ﻿int LengthOfLastWord(string s) {
     s = s.Trim();
 
-    var word = "";
-
     for (var x = s.Length - 1; x >= 0; x--)
-    {
-        if (s[x].ToString() == " ") return word.Length;
-        word += s[x];
-    }
+        if (s[x].ToString() == " ") return s[^(s.Length - 1 - x)..].Length;
 
-    return word.Length;
+    return s.Length;
 }
 
-Console.Write(LengthOfLastWord("   fly me   to   the moon  "));
+Console.Write(LengthOfLastWord("a"));
