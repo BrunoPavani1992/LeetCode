@@ -1,45 +1,24 @@
 ﻿string AddBinary(string a, string b)
 {
-    var result = "";
-    var plusOne = false;
+    var aLength = a.Length - 1;
+    var bLength = b.Length - 1;
+    var carry = 0; 
 
-    while (a.Length > b.Length)
-        b = "0" + b;
+    var chars = new List<char>();
 
-    while (a.Length < b.Length)
-        a = "0" + a;
-
-    while (a != "" || b != "")
+    while (aLength >= 0 || bLength >= 0 || carry > 0)
     {
-        if (a[^1].ToString() == "0" && b[^1].ToString() == "0")
-        {
-            if (!plusOne) result = "0" + result;
-            else
-            {
-                result = "1" + result;
-                plusOne = false;
-            }
-        }
-        else if ((a[^1].ToString() == "1" && b[^1].ToString() == "0") ||
-                 (a[^1].ToString() == "0" && b[^1].ToString() == "1"))
-        {
-            if (!plusOne) result = "1" + result;
-            else result = "0" + result;
-        }
-        else
-        {
-            if (!plusOne) result = "0" + result;
-            else result = "1" + result;
-            plusOne = true;
-        }
-
-        a = a.Remove(a.Length - 1, 1);
-        b = b.Remove(b.Length - 1, 1);
+        var sum = carry;
+        
+        if (aLength >= 0) sum += a[aLength--] - '0';
+        if (bLength >= 0) sum += b[bLength--] - '0';
+        
+        chars.Add((char)('0' + (sum % 2)));
+        carry = sum / 2;
     }
 
-    if (plusOne) result = "1" + result;
-
-    return result;
+    chars.Reverse();
+    return new string(chars.ToArray());
 }
 
 Console.WriteLine(AddBinary("1111", "1111"));
