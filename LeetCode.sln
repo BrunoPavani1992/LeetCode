@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlusOne", "PlusOne\PlusOne.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddBinary", "AddBinary\AddBinary.csproj", "{7D111249-95E8-4658-B883-13CAB0FAC7AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sqrt", "Sqrt\Sqrt.csproj", "{0075B189-A4C6-4185-BA4A-BC50049F6B84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{7D111249-95E8-4658-B883-13CAB0FAC7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D111249-95E8-4658-B883-13CAB0FAC7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D111249-95E8-4658-B883-13CAB0FAC7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0075B189-A4C6-4185-BA4A-BC50049F6B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0075B189-A4C6-4185-BA4A-BC50049F6B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0075B189-A4C6-4185-BA4A-BC50049F6B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0075B189-A4C6-4185-BA4A-BC50049F6B84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
