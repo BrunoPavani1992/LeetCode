@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddBinary", "AddBinary\AddB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sqrt", "Sqrt\Sqrt.csproj", "{0075B189-A4C6-4185-BA4A-BC50049F6B84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimbingStairs", "ClimbingStairs\ClimbingStairs.csproj", "{315929B6-7C01-4EFA-AF35-872C87B1C526}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,5 +92,9 @@ Global
 		{0075B189-A4C6-4185-BA4A-BC50049F6B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0075B189-A4C6-4185-BA4A-BC50049F6B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0075B189-A4C6-4185-BA4A-BC50049F6B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315929B6-7C01-4EFA-AF35-872C87B1C526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315929B6-7C01-4EFA-AF35-872C87B1C526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315929B6-7C01-4EFA-AF35-872C87B1C526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315929B6-7C01-4EFA-AF35-872C87B1C526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
