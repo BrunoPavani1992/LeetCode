@@ -16,19 +16,31 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 int MySqrt(int x)
 {
     if (x < 2) return x;
-        
-    var i = 2;
-    
-    while (true)
+
+    var left = 1;
+    var right = x / 2;
+    var answer = 0;
+
+    while (left <= right)
     {
-        if (x / i == i)
-            return i;
+        var mid = left + (right - left) / 2;
+        long square = (long)mid * mid;
 
-        if (x / i < i)
-            return i-1;
+        if (square == x)
+            return mid;
 
-        i++;
+        if (square < x)
+        {
+            answer = mid;
+            left = mid + 1;
+        }
+        else
+        {
+            right = mid - 1;
+        }
     }
+
+    return answer;
 }
 
 Console.WriteLine(MySqrt(36));
