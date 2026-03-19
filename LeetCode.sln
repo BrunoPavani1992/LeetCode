@@ -30,6 +30,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sqrt", "Sqrt\Sqrt.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimbingStairs", "ClimbingStairs\ClimbingStairs.csproj", "{315929B6-7C01-4EFA-AF35-872C87B1C526}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Medium", "Medium", "{32816F4D-0E9A-407E-B4EA-56DD6F28BFA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateBinarySearchTree", "ValidateBinarySearchTree\ValidateBinarySearchTree.csproj", "{1F2DA912-61BD-426E-9F74-A2629E56189F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,5 +100,12 @@ Global
 		{315929B6-7C01-4EFA-AF35-872C87B1C526}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{315929B6-7C01-4EFA-AF35-872C87B1C526}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{315929B6-7C01-4EFA-AF35-872C87B1C526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F2DA912-61BD-426E-9F74-A2629E56189F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F2DA912-61BD-426E-9F74-A2629E56189F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F2DA912-61BD-426E-9F74-A2629E56189F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F2DA912-61BD-426E-9F74-A2629E56189F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F2DA912-61BD-426E-9F74-A2629E56189F} = {32816F4D-0E9A-407E-B4EA-56DD6F28BFA3}
 	EndGlobalSection
 EndGlobal
