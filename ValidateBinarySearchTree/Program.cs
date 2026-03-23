@@ -3,16 +3,12 @@
 List<int> Traverse(TreeNode root, ref List<int> list)
 {
     if (root.left != null)
-    {
        Traverse(root.left, ref list);
-    }
     
     list.Add(root.val);
 
     if (root.right != null)
-    {
         Traverse(root.right, ref list);
-    }
     
     return list;
 }
